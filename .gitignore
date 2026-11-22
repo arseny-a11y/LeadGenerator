@@ -17,15 +17,13 @@ env/
 __pycache__/
 *.py[cod]
 
-# Временные тестовые скрипты
-test.py
 
 # Настройки редактора кода
 .vscode/
 .idea/
 
-#Изображения и медиа файлы
-
-add_column.py
-
 .git/
+
+#сессии аккаунта
+*.session-journal
+*.session
