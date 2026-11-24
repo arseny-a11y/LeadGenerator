@@ -40,7 +40,7 @@ async def save_leads(
             sender_id=sender_id,
             sender_username=sender_username,
             message_text=normalized_text,
-            matched_keywords=matched_keyword,
+            matched_keyword=matched_keyword,
         )
 
         session.add(lead)
