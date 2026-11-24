@@ -4,7 +4,8 @@ class Settings(BaseSettings):
     API_ID: int
     API_HASH: str
     USERNAME_CHANNEL: str
-
+    TOKEN: str
+    
     @property
     def database_url_aiosqlite(self) -> str:
         return "sqlite+aiosqlite:///database/database.db"
