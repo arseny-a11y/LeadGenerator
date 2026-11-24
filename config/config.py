@@ -5,6 +5,10 @@ class Settings(BaseSettings):
     API_HASH: str
     USERNAME_CHANNEL: str
 
+    @property
+    def database_url_aiosqlite(self) -> str:
+        return "sqlite+aiosqlite:///database/database.db"
+    
     model_config = SettingsConfigDict(env_file="config/.env",extra="ignore")
 
 settings = Settings()
